@@ -63,26 +63,6 @@ namespace IECodeChallenge.Tests
 
         }
 
-        //generate random commands
-        [TestMethod]
-        public void RandomTest()
-        {
-            Pacman pacman = new Pacman();
-
-            
-
-            pacman.Place(1, 2, EDirection.EAST);
-
-            pacman.Move();
-            pacman.Move();
-            pacman.RotateLeft();
-            pacman.Move();
-
-
-            Assert.AreEqual(3, pacman.X);
-            Assert.AreEqual(3, pacman.Y);
-            Assert.AreEqual(EDirection.NORTH, pacman.F);
-
-        }
+       
     }
 }
